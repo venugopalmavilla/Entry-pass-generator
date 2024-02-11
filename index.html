@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Card Generator.by venu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="idCard">
+      <h1>ID Card Generater</h1>
+      <input type="file" id="photoUpload" accept="image/*" />
+      <button id="uploadButton">Upload</button>
+      <div id="preview"></div>
+
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" placeholder="Enter Student Name" />
+
+      <label for="studentID">Roll Number:</label>
+      <input type="text" id="rollNum" placeholder="Enter Student ID" />
+
+      <label for="Branch">Branch & Class:</label>
+      <input
+        type="text"
+        id="branch"
+        placeholder="Enter your branch class '4th CSE'"
+      />
+
+      <label for="college name">College Name: </label>
+      <input type="text" id="CollegeName" placeholder="Enter College Name" />
+
+      <label for="emai">Registered email: </label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your registered email"
+      />
+      <label for="ph-no">Phone number:</label>
+      <input type="number" id="phno" placeholder="Eneter your phone number" />
+      <label for="activity">Event Name: </label>
+      <input type="Text" id="activity" placeholder="Enter your event name" />
+      <label for="participants">Number of participants:</label>
+      <input
+        type="number"
+        id="participants"
+        placeholder="Number of participants"
+      />
+      <label for="uniqueid">Enter the Unique ID:</label>
+      <input type="text" id="uniqueid" placeholder="Enter the Unique ID" />
+
+      <button onclick="generateIDCard()">generate entry pass</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
